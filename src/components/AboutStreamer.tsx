@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const features = [
   "Динамичные геймплейные стримы",
@@ -15,14 +16,27 @@ const AboutStreamer = () => {
       <div className="container px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Обо мне</h2>
+            <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start">
+              <Avatar className="w-24 h-24 border-2 border-primary">
+                <AvatarImage 
+                  src="https://cdn.poehali.dev/files/4fe9247e-ca8e-4043-a86f-7f1b7457024f.jpg" 
+                  alt="BoniKing123" 
+                />
+                <AvatarFallback>BK</AvatarFallback>
+              </Avatar>
+              <div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Обо мне</h2>
+                <p className="text-foreground/80">BoniKing123 - Стример Fortnite</p>
+              </div>
+            </div>
+            
             <p className="text-foreground/80 md:text-xl">
-              Привет, я BoniKing123! Стример с многолетним опытом в киберспортивных дисциплинах и казуальных играх. 
+              Привет, я BoniKing123! Стример с многолетним опытом в Fortnite и других популярных играх. 
               Мои стримы сочетают в себе высокий уровень игрового мастерства и дружескую атмосферу.
             </p>
             <p className="text-foreground/80">
               Начал свою карьеру стримера в 2018 году и с тех пор собрал вокруг себя замечательное сообщество единомышленников.
-              Играю преимущественно в шутеры и стратегии, но всегда открыт для экспериментов с новыми жанрами по запросам зрителей.
+              Специализируюсь на Fortnite, но всегда открыт для экспериментов с новыми жанрами по запросам зрителей.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row pt-4">
               <Button asChild className="bg-accent hover:bg-accent/90">

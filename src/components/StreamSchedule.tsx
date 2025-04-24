@@ -5,22 +5,22 @@ const scheduleData = [
   {
     day: "Понедельник",
     time: "19:00 - 23:00",
-    game: "Valorant",
+    game: "Fortnite",
   },
   {
     day: "Среда",
     time: "19:00 - 23:00",
-    game: "CS2",
+    game: "Fortnite",
   },
   {
     day: "Пятница",
     time: "20:00 - 00:00",
-    game: "Minecraft",
+    game: "Fortnite",
   },
   {
     day: "Суббота",
     time: "18:00 - 00:00",
-    game: "Разные игры",
+    game: "Fortnite",
   },
 ];
 
