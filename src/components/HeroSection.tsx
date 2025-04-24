@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
@@ -32,7 +31,7 @@ const HeroSection = () => {
           </div>
           <div className="mx-auto lg:ml-auto flex w-full max-w-[400px] items-center justify-center overflow-hidden rounded-xl">
             <img 
-              src="/placeholder.svg" 
+              src="https://cdn.poehali.dev/files/89d86f38-d276-44a6-a871-286bb2f8af93.jpg" 
               alt="BoniKing123" 
               className="aspect-square object-cover w-full rounded-xl shadow-2xl" 
             />

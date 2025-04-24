@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Twitch, Youtube, Twitter, Instagram, Mail } from "lucide-react";
+import { Twitch, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -54,15 +54,6 @@ const Footer = () => {
               </a>
               <a href="https://www.youtube.com/channel/UCwd361CfXGv-QgoWo_fbHBQ" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
                 <Youtube className="h-5 w-5" />
-              </a>
-              <a href="https://twitter.com/boniking123" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="https://instagram.com/boniking123" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="mailto:contact@boniking123.com" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
-                <Mail className="h-5 w-5" />
               </a>
             </div>
           </div>
