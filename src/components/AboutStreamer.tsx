@@ -46,7 +46,7 @@ const AboutStreamer = () => {
                   <h4 className="font-semibold mb-2">Статистика:</h4>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-background p-4 rounded-lg text-center">
-                      <span className="text-2xl font-bold text-primary">100K+</span>
+                      <span className="text-2xl font-bold text-primary">3K+</span>
                       <p className="text-sm text-foreground/70">Подписчиков</p>
                     </div>
                     <div className="bg-background p-4 rounded-lg text-center">

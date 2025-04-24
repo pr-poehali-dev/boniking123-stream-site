@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Twitch, Youtube, Twitter } from "lucide-react";
+import { Twitch, Youtube } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -30,11 +30,8 @@ const Navbar = () => {
             <a href="https://twitch.tv/boniking123" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
               <Twitch className="h-5 w-5" />
             </a>
-            <a href="https://youtube.com/@boniking123" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
+            <a href="https://www.youtube.com/channel/UCwd361CfXGv-QgoWo_fbHBQ" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
               <Youtube className="h-5 w-5" />
-            </a>
-            <a href="https://twitter.com/boniking123" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
-              <Twitter className="h-5 w-5" />
             </a>
           </div>
           <Button variant="default" size="sm" asChild>

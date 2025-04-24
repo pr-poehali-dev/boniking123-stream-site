@@ -35,13 +35,13 @@ const Footer = () => {
             <h4 className="font-medium">Сообщество</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="https://discord.gg/boniking123" className="text-foreground/70 hover:text-foreground transition-colors">Discord</a>
+                <a href="https://discord.gg/9WTQn3XQAM" className="text-foreground/70 hover:text-foreground transition-colors">Discord</a>
               </li>
               <li>
                 <a href="https://twitch.tv/boniking123" className="text-foreground/70 hover:text-foreground transition-colors">Twitch</a>
               </li>
               <li>
-                <a href="https://youtube.com/@boniking123" className="text-foreground/70 hover:text-foreground transition-colors">YouTube</a>
+                <a href="https://www.youtube.com/channel/UCwd361CfXGv-QgoWo_fbHBQ" className="text-foreground/70 hover:text-foreground transition-colors">YouTube</a>
               </li>
             </ul>
           </div>
@@ -52,7 +52,7 @@ const Footer = () => {
               <a href="https://twitch.tv/boniking123" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
                 <Twitch className="h-5 w-5" />
               </a>
-              <a href="https://youtube.com/@boniking123" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
+              <a href="https://www.youtube.com/channel/UCwd361CfXGv-QgoWo_fbHBQ" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
                 <Youtube className="h-5 w-5" />
               </a>
               <a href="https://twitter.com/boniking123" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
