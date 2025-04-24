@@ -1,45 +1,74 @@
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import { Twitch, Youtube } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   return (
-    <nav className="bg-background/95 backdrop-blur-sm sticky top-0 z-50 w-full border-b border-border">
-      <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="text-xl font-bold text-primary">BoniKing123</span>
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-16 items-center px-4 md:px-6">
+        <Link to="/" className="flex items-center gap-2 text-lg font-semibold">
+          <span className="text-primary">BoniKing123</span>
         </Link>
-        
-        <div className="hidden md:flex md:gap-6">
-          <Link to="/" className="text-foreground/80 hover:text-foreground transition-colors">
+        <nav className="ml-auto flex gap-4 sm:gap-6">
+          <Link 
+            to="/" 
+            className="text-sm font-medium text-foreground/70 transition-colors hover:text-foreground"
+          >
             Главная
           </Link>
-          <Link to="/schedule" className="text-foreground/80 hover:text-foreground transition-colors">
+          <Link 
+            to="/schedule" 
+            className="text-sm font-medium text-foreground/70 transition-colors hover:text-foreground"
+          >
             Расписание
           </Link>
-          <Link to="/about" className="text-foreground/80 hover:text-foreground transition-colors">
+          <Link 
+            to="/about" 
+            className="text-sm font-medium text-foreground/70 transition-colors hover:text-foreground"
+          >
             Обо мне
           </Link>
-          <Link to="/donations" className="text-foreground/80 hover:text-foreground transition-colors">
-            Поддержать
-          </Link>
-        </div>
-        
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2">
-            <a href="https://twitch.tv/boniking123" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
+        </nav>
+        <div className="ml-auto flex items-center gap-4">
+          <div className="hidden md:flex gap-3">
+            <a
+              href="https://twitch.tv/boniking123"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/70 hover:text-purple-500 transition-colors"
+            >
               <Twitch className="h-5 w-5" />
             </a>
-            <a href="https://www.youtube.com/channel/UCwd361CfXGv-QgoWo_fbHBQ" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
+            <a
+              href="https://www.youtube.com/channel/UCwd361CfXGv-QgoWo_fbHBQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/70 hover:text-red-500 transition-colors"
+            >
               <Youtube className="h-5 w-5" />
             </a>
           </div>
-          <Button variant="default" size="sm" asChild>
-            <a href="https://twitch.tv/boniking123" target="_blank" rel="noopener noreferrer">Смотреть стрим</a>
+          <Button asChild variant="outline" className="hidden sm:flex">
+            <a 
+              href="https://discord.gg/9WTQn3XQAM" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Discord
+            </a>
+          </Button>
+          <Button asChild>
+            <a 
+              href="https://www.donationalerts.com/r/23qrt3fasf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Поддержать
+            </a>
           </Button>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 

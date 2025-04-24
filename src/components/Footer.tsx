@@ -26,7 +26,7 @@ const Footer = () => {
                 <Link to="/about" className="text-foreground/70 hover:text-foreground transition-colors">Обо мне</Link>
               </li>
               <li>
-                <Link to="/donations" className="text-foreground/70 hover:text-foreground transition-colors">Поддержать</Link>
+                <a href="https://www.donationalerts.com/r/23qrt3fasf" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-foreground transition-colors">Поддержать</a>
               </li>
             </ul>
           </div>
